@@ -1,0 +1,26 @@
+<div class="modal-container" *ngIf="isModalOpen">
+  <div class="modal-inner-container">
+    <div class="modal-content-container">
+      <div class="input-container">
+        <div class="label">Item1</div>
+        <input type="number" [(ngModel)]="modalData.item1" />
+      </div>
+      <div class="input-container">
+        <div class="label">Item2</div>
+        <input type="number" [(ngModel)]="modalData.item2" />
+      </div>
+      <div class="input-container">
+        <div class="label">Item3</div>
+        <input type="number" [(ngModel)]="modalData.item3" />
+      </div>
+    </div>
+    <div class="footer-container">
+      <div class="btn-container">
+        <button (click)="onSave()">Save</button>
+      </div>
+      <div class="btn-container">
+        <button (click)="onCancel()">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
